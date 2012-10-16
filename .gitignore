@@ -1,0 +1,8 @@
+/target/
+target/*
+nb-configuration.xml
+src/main/webapp/WEB-INF/glassfish-web.xml
+faces-config.NavData
+.classpath
+.project
+.settings/*
