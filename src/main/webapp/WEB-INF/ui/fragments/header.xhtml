@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+								xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+								xmlns:f="http://java.sun.com/jsf/core"
+								xmlns:h="http://java.sun.com/jsf/html">
+
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</a>
+				<a class="brand" href="faces/index.xhtml"><h:outputText value="#{i18n['global.title']}" /></a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li class="divider-vertical"></li>
+						<li>
+							<h:outputLink value="faces/index.xhtml">
+								<i class="icon-home"></i>
+								<h:outputText value="&#160;" />
+								#{i18n['global.navigation.home']}
+							</h:outputLink>
+						</li>
+						<li>
+							<h:outputLink value="#about">
+								<i class="icon-info-sign"></i>
+								<h:outputText value="&#160;" />
+								#{i18n['global.navigation.about']}
+							</h:outputLink>
+						</li>
+						<li>
+							<h:outputLink value="#about">
+								<i class="icon-envelope"></i>
+								<h:outputText value="&#160;" />
+								#{i18n['global.navigation.contact']}
+							</h:outputLink>
+							</li>
+						<li>
+							<h:outputLink value="#help">
+								<i class="icon-question-sign"></i>
+								<h:outputText value="&#160;" />
+								#{i18n['global.navigation.help']}
+							</h:outputLink>
+						</li>
+					</ul>
+					<ul class="nav pull-right">
+						<li class="dropdown">
+              <a href="javascript:void(0)" data-toggle="dropdown" class="dropdown-toggle" value="#">
+              	<i class="icon-user"></i><h:outputText value=" " />
+              	<h:outputText value="#{i18n['global.navigation.user.welcome']}"></h:outputText>
+              	<h:outputText value=" " />
+              	<h:outputText value="Guest" />
+              	<b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><h:outputLink value=""><i class="icon-user"></i><h:outputText value=" " /><h:outputText value="#{i18n['global.navigation.user.profile']}" /></h:outputLink></li>
+                <li><h:outputLink value=""><i class="icon-user"></i><h:outputText value=" " /><h:outputText value="#{i18n['global.navigation.user.settings']}" /></h:outputLink></li>
+                <li class="divider"></li>
+                <li><h:outputLink value=""><i class="icon-user"></i><h:outputText value=" " /><h:outputText value="#{i18n['global.navigation.user.logout']}" /></h:outputLink></li>
+              </ul>
+            </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</ui:composition>
