@@ -8,22 +8,18 @@
 								xmlns:p="http://primefaces.org/ui">
 
 	<ui:define name="app">
-		<div class="container-fluid">
+
+		<div class="hero-unit">
 			<div class="row-fluid">
+				<div class="span3">
+				</div>
 				<div class="span9">
-					<div class="hero-unit">
-						<div class="row-fluid">
-							<div class="span3">
-							</div>
-							<div class="span9">
-								<h2><i class="icon icon-camera"></i> <h:outputText value="#{i18n['global.title']}" /></h2>
-								<p><h:outputText value="#{i18n['global.description']}"/></p>
-							</div>
-						</div>
-					</div>
+					<h2><i class="icon icon-camera"></i> <h:outputText value="#{i18n['global.title']}" /></h2>
+					<p><h:outputText value="#{i18n['global.description']}"/></p>
 				</div>
 			</div>
 		</div>
+
 	</ui:define>
 
 </ui:composition>
