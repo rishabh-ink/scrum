@@ -6,34 +6,21 @@
 								xmlns:f="http://java.sun.com/jsf/core"
 								xmlns:h="http://java.sun.com/jsf/html">
 
-	<ul class="nav nav-pills nav-pills-large-icons row-fluid">
-		<li class="active span3">
-			<a href="#nav-product-backlog" data-toggle="pill">
-				<h:outputText value="#{i18n['application.navigation.pills.product-backlog']}" />
-			</a>
-		</li>
-		<li class="span3">
-			<a href="#nav-resource-allocation" data-toggle="pill">
-				<h:outputText value="#{i18n['application.navigation.pills.resource-allocation']}" />
-			</a>
-		</li>
-		<li class="span3">
-			<a href="#nav-burn-down" data-toggle="pill">
-				<h:outputText value="#{i18n['application.navigation.pills.burn-down']}" />
-			</a>
-		</li>
-		<li class="span3">
-			<a href="#nav-reports" data-toggle="pill">
-				<h:outputText value="#{i18n['application.navigation.pills.reports']}" />
-			</a>
-		</li>
-	</ul>
-
-	<div class="tab-content">
-		<div class="tab-pane active" id="nav-product-backlog">1..</div>
-		<div class="tab-pane" id="nav-resource-allocation">..2.</div>
-		<div class="tab-pane" id="nav-burn-down">.3..</div>
-		<div class="tab-pane" id="nav-reports">..4.</div>
-	</div>
+	<h:form>
+		<ul class="nav nav-pills row-fluid">
+			<li class="active span3">
+				<p:commandLink action="module/product-backlog" update=":app-home-form:module" value="#{i18n['application.navigation.pills.product-backlog']}" />
+			</li>
+			<li class="span3">
+				<p:commandLink action="app/module/resource-allocation" update=":app-home-form:module" value="#{i18n['application.navigation.pills.resource-allocation']}" />
+			</li>
+			<li class="span3">
+				<p:commandLink action="module/burn-down" update=":app-home-form:module" value="#{i18n['application.navigation.pills.burn-down']}" />
+			</li>
+			<li class="span3">
+				<p:commandLink action="module/reports" update=":app-home-form:module" value="#{i18n['application.navigation.pills.reports']}" />
+			</li>
+		</ul>
+	</h:form>
 
 </ui:composition>
