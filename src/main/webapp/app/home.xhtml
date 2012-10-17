@@ -10,7 +10,7 @@
 	<ui:define name="layout-app">
 		<h:form id="app-home-form">
 			<p:panel id="module">
-				<ui:include src=""></ui:include>
+				<ui:include src="#{navigationBean.currentPage}"></ui:include>
 			</p:panel>
 		</h:form>
 	</ui:define>
