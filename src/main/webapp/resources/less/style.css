@@ -10543,3 +10543,12 @@ body {
   background-position: 95%;
   background-color: #efefef;
 }
+.product-backlog-table .serial {
+  width: 5%;
+}
+.product-backlog-table .feature {
+  width: 65%;
+}
+.product-backlog-table .work-progress {
+  width: 30%;
+}
