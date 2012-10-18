@@ -179,3 +179,14 @@
     -ms-transform-origin:     @x @y;
     -o-transform-origin:      @x @y;
 }
+
+// Courtesy http://stackoverflow.com/a/2547064/585614
+.background-image-with-gradient(@imageUrl, @colorOne, @colorTwo, @fallbackColor: @white) {
+	background-image: url(@imageUrl); // fallback
+	background-image: url(@imageUrl), -webkit-gradient(linear, left top, left bottom, from(@colorOne), to(@colorTwo)); // Saf4+, Chrome
+	background-image: url(@imageUrl), -webkit-linear-gradient(top, @colorOne, @colorTwo); // Chrome 10+, Saf5.1+
+	background-image: url(@imageUrl),    -moz-linear-gradient(top, @colorOne, @colorTwo); // FF3.6+
+	background-image: url(@imageUrl),     -ms-linear-gradient(top, @colorOne, @colorTwo); // IE10
+	background-image: url(@imageUrl),      -o-linear-gradient(top, @colorOne, @colorTwo); // Opera 11.10+
+	background-image: url(@imageUrl),         linear-gradient(top, @colorOne, @colorTwo);
+}

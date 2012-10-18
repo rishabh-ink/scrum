@@ -4,32 +4,46 @@
 	font-weight: bold;
 }
 
-.main-navigation .tab-header-item {
-	
-}
-
-/*
-.main-navigation .nav-icon {
-	background: url(img/navigation/sprites.png) no-repeat;
-	width: 48px;
-	height: 48px;
+.navigation-icons(@imageUrl, @colorOne: #fefefe, @colorTwo: #efefef, @fallbackColor: #efefef) {
+	.background-image-with-gradient(@imageUrl, @colorOne, @colorTwo, @fallbackColor);
 	display: block;
-	margin: 0 auto;
+	min-height: 60px;
+	background-repeat: no-repeat;
+	background-position: 95%;
+	background-color: #efefef;
 }
 
-.main-navigation .nav-icon.resource-allocation {
-	background-position: -48px 0;
+// For default state.
+.main-navigation .nav-icon.resource-allocation {	
+	.navigation-icons('img/navigation/resource-allocation.png');
 }
 
 .main-navigation .nav-icon.burn-down {
-	background-position: -96px 0;
+	.navigation-icons('img/navigation/burn-down.png');
 }
 
 .main-navigation .nav-icon.reports {
-	background-position: -144px 0;
+	.navigation-icons('img/navigation/reports.png');
 }
 
 .main-navigation .nav-icon.product-backlog {
-	background-position: 0 0;
+	.navigation-icons('img/navigation/product-backlog.png');
 }
-*/
+
+
+// For active state.
+.main-navigation .nav-icon.resource-allocation.ui-state-active {
+	.navigation-icons('img/navigation/resource-allocation.png', #efefef, @white, @white);
+}
+
+.main-navigation .nav-icon.burn-down.ui-state-active {
+	.navigation-icons('img/navigation/burn-down.png', #efefef, @white, @white);
+}
+
+.main-navigation .nav-icon.reports.ui-state-active {
+	.navigation-icons('img/navigation/reports.png', #efefef, @white, @white);
+}
+
+.main-navigation .nav-icon.product-backlog.ui-state-active {
+	.navigation-icons('img/navigation/product-backlog.png', #efefef, @white, @white);
+}

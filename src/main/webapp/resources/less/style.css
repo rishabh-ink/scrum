@@ -10431,28 +10431,115 @@ body {
   text-align: center;
   font-weight: bold;
 }
-/*
-.main-navigation .nav-icon {
-	background: url(img/navigation/sprites.png) no-repeat;
-	width: 48px;
-	height: 48px;
-	display: block;
-	margin: 0 auto;
-}
-
 .main-navigation .nav-icon.resource-allocation {
-	background-position: -48px 0;
+  background-image: url('img/navigation/resource-allocation.png');
+  background-image: url('img/navigation/resource-allocation.png'), -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#efefef));
+  background-image: url('img/navigation/resource-allocation.png'), -webkit-linear-gradient(top, #fefefe, #efefef);
+  background-image: url('img/navigation/resource-allocation.png'), -moz-linear-gradient(top, #fefefe, #efefef);
+  background-image: url('img/navigation/resource-allocation.png'), -ms-linear-gradient(top, #fefefe, #efefef);
+  background-image: url('img/navigation/resource-allocation.png'), -o-linear-gradient(top, #fefefe, #efefef);
+  background-image: url('img/navigation/resource-allocation.png'), linear-gradient(top, #fefefe, #efefef);
+  display: block;
+  min-height: 60px;
+  background-repeat: no-repeat;
+  background-position: 95%;
+  background-color: #efefef;
 }
-
 .main-navigation .nav-icon.burn-down {
-	background-position: -96px 0;
+  background-image: url('img/navigation/burn-down.png');
+  background-image: url('img/navigation/burn-down.png'), -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#efefef));
+  background-image: url('img/navigation/burn-down.png'), -webkit-linear-gradient(top, #fefefe, #efefef);
+  background-image: url('img/navigation/burn-down.png'), -moz-linear-gradient(top, #fefefe, #efefef);
+  background-image: url('img/navigation/burn-down.png'), -ms-linear-gradient(top, #fefefe, #efefef);
+  background-image: url('img/navigation/burn-down.png'), -o-linear-gradient(top, #fefefe, #efefef);
+  background-image: url('img/navigation/burn-down.png'), linear-gradient(top, #fefefe, #efefef);
+  display: block;
+  min-height: 60px;
+  background-repeat: no-repeat;
+  background-position: 95%;
+  background-color: #efefef;
 }
-
 .main-navigation .nav-icon.reports {
-	background-position: -144px 0;
+  background-image: url('img/navigation/reports.png');
+  background-image: url('img/navigation/reports.png'), -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#efefef));
+  background-image: url('img/navigation/reports.png'), -webkit-linear-gradient(top, #fefefe, #efefef);
+  background-image: url('img/navigation/reports.png'), -moz-linear-gradient(top, #fefefe, #efefef);
+  background-image: url('img/navigation/reports.png'), -ms-linear-gradient(top, #fefefe, #efefef);
+  background-image: url('img/navigation/reports.png'), -o-linear-gradient(top, #fefefe, #efefef);
+  background-image: url('img/navigation/reports.png'), linear-gradient(top, #fefefe, #efefef);
+  display: block;
+  min-height: 60px;
+  background-repeat: no-repeat;
+  background-position: 95%;
+  background-color: #efefef;
 }
-
 .main-navigation .nav-icon.product-backlog {
-	background-position: 0 0;
+  background-image: url('img/navigation/product-backlog.png');
+  background-image: url('img/navigation/product-backlog.png'), -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#efefef));
+  background-image: url('img/navigation/product-backlog.png'), -webkit-linear-gradient(top, #fefefe, #efefef);
+  background-image: url('img/navigation/product-backlog.png'), -moz-linear-gradient(top, #fefefe, #efefef);
+  background-image: url('img/navigation/product-backlog.png'), -ms-linear-gradient(top, #fefefe, #efefef);
+  background-image: url('img/navigation/product-backlog.png'), -o-linear-gradient(top, #fefefe, #efefef);
+  background-image: url('img/navigation/product-backlog.png'), linear-gradient(top, #fefefe, #efefef);
+  display: block;
+  min-height: 60px;
+  background-repeat: no-repeat;
+  background-position: 95%;
+  background-color: #efefef;
 }
-*/
+.main-navigation .nav-icon.resource-allocation.ui-state-active {
+  background-image: url('img/navigation/resource-allocation.png');
+  background-image: url('img/navigation/resource-allocation.png'), -webkit-gradient(linear, left top, left bottom, from(#efefef), to(#ffffff));
+  background-image: url('img/navigation/resource-allocation.png'), -webkit-linear-gradient(top, #efefef, #ffffff);
+  background-image: url('img/navigation/resource-allocation.png'), -moz-linear-gradient(top, #efefef, #ffffff);
+  background-image: url('img/navigation/resource-allocation.png'), -ms-linear-gradient(top, #efefef, #ffffff);
+  background-image: url('img/navigation/resource-allocation.png'), -o-linear-gradient(top, #efefef, #ffffff);
+  background-image: url('img/navigation/resource-allocation.png'), linear-gradient(top, #efefef, #ffffff);
+  display: block;
+  min-height: 60px;
+  background-repeat: no-repeat;
+  background-position: 95%;
+  background-color: #efefef;
+}
+.main-navigation .nav-icon.burn-down.ui-state-active {
+  background-image: url('img/navigation/burn-down.png');
+  background-image: url('img/navigation/burn-down.png'), -webkit-gradient(linear, left top, left bottom, from(#efefef), to(#ffffff));
+  background-image: url('img/navigation/burn-down.png'), -webkit-linear-gradient(top, #efefef, #ffffff);
+  background-image: url('img/navigation/burn-down.png'), -moz-linear-gradient(top, #efefef, #ffffff);
+  background-image: url('img/navigation/burn-down.png'), -ms-linear-gradient(top, #efefef, #ffffff);
+  background-image: url('img/navigation/burn-down.png'), -o-linear-gradient(top, #efefef, #ffffff);
+  background-image: url('img/navigation/burn-down.png'), linear-gradient(top, #efefef, #ffffff);
+  display: block;
+  min-height: 60px;
+  background-repeat: no-repeat;
+  background-position: 95%;
+  background-color: #efefef;
+}
+.main-navigation .nav-icon.reports.ui-state-active {
+  background-image: url('img/navigation/reports.png');
+  background-image: url('img/navigation/reports.png'), -webkit-gradient(linear, left top, left bottom, from(#efefef), to(#ffffff));
+  background-image: url('img/navigation/reports.png'), -webkit-linear-gradient(top, #efefef, #ffffff);
+  background-image: url('img/navigation/reports.png'), -moz-linear-gradient(top, #efefef, #ffffff);
+  background-image: url('img/navigation/reports.png'), -ms-linear-gradient(top, #efefef, #ffffff);
+  background-image: url('img/navigation/reports.png'), -o-linear-gradient(top, #efefef, #ffffff);
+  background-image: url('img/navigation/reports.png'), linear-gradient(top, #efefef, #ffffff);
+  display: block;
+  min-height: 60px;
+  background-repeat: no-repeat;
+  background-position: 95%;
+  background-color: #efefef;
+}
+.main-navigation .nav-icon.product-backlog.ui-state-active {
+  background-image: url('img/navigation/product-backlog.png');
+  background-image: url('img/navigation/product-backlog.png'), -webkit-gradient(linear, left top, left bottom, from(#efefef), to(#ffffff));
+  background-image: url('img/navigation/product-backlog.png'), -webkit-linear-gradient(top, #efefef, #ffffff);
+  background-image: url('img/navigation/product-backlog.png'), -moz-linear-gradient(top, #efefef, #ffffff);
+  background-image: url('img/navigation/product-backlog.png'), -ms-linear-gradient(top, #efefef, #ffffff);
+  background-image: url('img/navigation/product-backlog.png'), -o-linear-gradient(top, #efefef, #ffffff);
+  background-image: url('img/navigation/product-backlog.png'), linear-gradient(top, #efefef, #ffffff);
+  display: block;
+  min-height: 60px;
+  background-repeat: no-repeat;
+  background-position: 95%;
+  background-color: #efefef;
+}
